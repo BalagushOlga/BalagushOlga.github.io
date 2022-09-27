@@ -4,38 +4,22 @@
         <title>CV</title>
         <meta charset = utf-8>
         <link rel="icon" type="image/x-icon" href="/resume.png">
-        <style>
-            a:link {
-              color: grey;
-              background-color: transparent;
-              text-decoration: none;
-            }
-            a:visited {
-              color: grey;
-              background-color: transparent;
-              text-decoration: none;
-            }
-            a:hover {
-              color: black;
-              background-color: transparent;
-              text-decoration: underline;
-            }
-            a:active {
-              color: red;
-              background-color: transparent;
-              text-decoration: underline;
-            }
-        </style>
+        <link rel="stylesheet" href = "style.css">
     </head>
     <body>
+        <section class="header">
         <b> <h1>Balahush Olha</h1> </b>
         <p style="font-family:courier;">Kyiv, Ukraine</p>
         <p style="font-family:courier;"> <b>Nationality:</b> Ukrainian</p>
         <p style="font-family:courier;"> <b>Email:</b> <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzCpShJzckNcZJVSMhxskdTBWjlbqHzxWwpTKpGmghtMCZtLllZmpTxRmqbzTMhxGlJdRhL">balagush.olga01@gmail.com</a></p>
         <p style="font-family:courier;"> <b>Phone:</b> +38 (096) 522-90-97</p>
         <p style="font-family:courier;"> <b><a href="https://www.linkedin.com/in/olga-balagush-821811227/">LinkedIn</a></b></p>
+        </section>
+        <section class="main">
+        <!-- <h2>EDUCATION</h2> -->
+        <button class="button" onclick="educationButton()">EDUCATION</button>
         <hr>
-        <h2>EDUCATION</h2>
+        <div id="education">
         <ul>
             <table style="width:100%">
                 <tr>
@@ -50,8 +34,11 @@
                 </tr>
             </table>
         </ul>
+        </div>
+        <!-- <h2>PROFESSIONAL SKILLS</h2> -->
+        <button class="button" onclick="professionalSkillsButton()">PROFESSIONAL SKILLS</button>
         <hr>
-        <h2>PROFESSIONAL SKILLS</h2>
+        <div id="professional skills">
         <ul>
             <li><b>Programming languages</b>
                 <ul>
@@ -74,8 +61,11 @@
                 </ul>
             </li>
         </ul>
+        </div>
+        <!-- <h2>LANGUAGE SKILLS</h2> -->
+        <button class="button" onclick="languageSkillsButton()">LANGUAGE SKILLS</button>
         <hr>
-        <h2>LANGUAGE SKILLS</h2>
+        <div id="language skills">
         <ul>
             <table style="width:100%">
                 <tr>
@@ -88,8 +78,11 @@
                 </tr>
             </table>
         </ul>
+        </div>
+        <!-- <h2>PROJECTS AND PUBLICATIONS</h2> -->
+        <button class="button" onclick="projectAndPublicationButton()">PROJECTS AND PUBLICATIONS</button>
         <hr>
-        <h2>PROJECTS AND PUBLICATIONS</h2>
+        <div id="project and publication">
         <ul>
             <table style="width:100%">
                 <tr>
@@ -98,8 +91,11 @@
                 </tr>
             </table>
         </ul>
+        </div>
+        <!-- <h2>ADDITIONAL INFORMATION</h2> -->
+        <button class="button" onclick="additionalInformationButton()">ADDITIONAL INFORMATION</button>
         <hr>
-        <h2>ADDITIONAL INFORMATION</h2>
+        <div id="additional information">
         <ul>
             <table style="width:100%">
                 <tr>
@@ -122,5 +118,49 @@
                 </tr>
             </table>
         </ul>
+        </div>
+        </section>
+        <script>
+            function educationButton() {
+                var x = document.getElementById('education');
+                if (x.style.display === 'block') {
+                    x.style.display = 'none';
+                } else {
+                    x.style.display = 'block';
+                }
+            }
+            function professionalSkillsButton(){
+                var x = document.getElementById('professional skills');
+                if (x.style.display === 'block') {
+                    x.style.display = 'none';
+                } else {
+                    x.style.display = 'block';
+                }
+            }
+            function languageSkillsButton(){
+                var x = document.getElementById('language skills');
+                if (x.style.display === 'block') {
+                    x.style.display = 'none';
+                } else {
+                    x.style.display = 'block';
+                }
+            }
+            function projectAndPublicationButton(){
+                var x = document.getElementById('project and publication');
+                if (x.style.display === 'block') {
+                    x.style.display = 'none';
+                } else {
+                    x.style.display = 'block';
+                }
+            }
+            function additionalInformationButton(){
+                var x = document.getElementById('additional information');
+                if (x.style.display === 'block') {
+                    x.style.display = 'none';
+                } else {
+                    x.style.display = 'block';
+                }
+            }
+        </script>
     </body>
 </html>
